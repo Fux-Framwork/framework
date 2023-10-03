@@ -15,7 +15,7 @@ use PHPMailer\PHPMailer\SMTP;
  * @return bool
  * @throws Exception
  */
-function send_email($to, $subject, $message, $fromName, $bccList = [])
+function send_email($to, $subject, $message, $fromName = null, $bccList = [])
 {
     $mail = new PHPMailer;
     $mail->isSMTP();
@@ -26,7 +26,7 @@ function send_email($to, $subject, $message, $fromName, $bccList = [])
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Username = SMTP_USERNAME;
     $mail->Password = SMTP_PASSWORD;
-    $mail->setFrom(SMTP_FROM, $fromName);
+    $mail->setFrom(SMTP_FROM_ADDRESS, $fromName ?? SMTP_FROM);
     if ($bccList && is_array($bccList)) {
         foreach ($bccList as $bccAddress) {
             $mail->addBCC($bccAddress);
