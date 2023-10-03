@@ -1,0 +1,22 @@
+{
+    "name": "fux/framework",
+    "description": "PHP Fux Framework",
+    "autoload": {
+        "psr-4": {
+            "Fux\\": "src/Helpers/*"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Matteo Fusillo",
+            "email": "info@matteofusillo.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "phpmailer/phpmailer": "^6.8"
+    }
+}
