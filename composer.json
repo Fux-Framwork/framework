@@ -6,7 +6,7 @@
             "Fux\\": "src/"
         },
         "files": [
-            "src/Helpers/*"
+            "src/Helpers/_include.php"
         ]
     },
     "authors": [
