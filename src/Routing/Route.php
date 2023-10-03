@@ -2,7 +2,7 @@
 
 namespace Fux\Routing;
 
-use Fux\Middleware\IMiddleware;
+use Fux\Http\Middleware\IMiddleware;
 
 /**
  * La classe route deve fornire una interfaccia per il router e deve contenere al suo interno:

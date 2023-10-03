@@ -2,8 +2,8 @@
 
 namespace Fux\Routing;
 
+use Fux\Http\Middleware\DefaultCsrfProtectionMiddleware;
 use Fux\Http\Request;
-use Fux\Middleware\DefaultCsrfProtectionMiddleware;
 
 class Routing
 {
