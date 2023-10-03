@@ -4,10 +4,7 @@
     "autoload": {
         "psr-4": {
             "Fux\\": "src/Helpers/*"
-        },
-        "files": [
-            "src/helpers.php"
-        ]
+        }
     },
     "authors": [
         {
